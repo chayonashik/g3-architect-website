@@ -153,11 +153,23 @@ main {
     color: #FFF;
     width: 342px;
     padding: 40px;
+    position: relative;
+    bottom: 100px;
 
+}
+
+.feature-img img {
+    height: 100%;
+    margin-left: 100px;
 }
 
 .ten-years-badge h2 {
     font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.25rem;
 }
 
 .section-title {
@@ -219,9 +231,20 @@ main {
 
     nav,
     .teams-container,
+    .Features,
     .facts-card-container,
     .sponsors-img-container {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 300px;
     }
 
     .teams-img-container {
@@ -246,6 +269,7 @@ main {
     }
 
     nav,
+    .Features,
     .teams-container,
     .sponsors-img-container {
         flex-direction: column;
